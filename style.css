@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(190, 164, 92);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.reservation-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.reservation-group label {
+    margin-bottom: 5px;
+}
+.reservation-groups {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.accessibility-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.reservation-groups label {
+    margin-bottom: 5px;
+}
+.btn-book {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

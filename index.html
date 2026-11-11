@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Reservations</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Parking Reservations</h2>
+        <div class="type-group">
+            <label for="location">Location: </label>
+            <select id="location" placeholder="Select a location">
+                <option value="chavezview">Chavez View</option>
+                <option value="berryavenue">Berry Avenue</option>
+                <option value="sydney'sgarage">Sydney's Garage</option>
+            </select>
+        </div>
+        <div class="accessibility-group">
+            <label for="accessibility">Accessibility: </label>
+            <select id="accessibility">
+                <option value="visitor">Visitor Parking</option>
+                <option value="employee">Employee Parking</option>
+                <option value="commuter">General Commuter Parking</option>
+            </select>
+        </div>
+        <div class="reservation-group">
+            <label for="date">Date: </label>
+            <input type="date" id="date">
+            </select>
+        </div>
+        <div class="reservation-groups">
+            <label for="time">Time: </label>
+            <select id="time">
+                <option value="10:30am">10:30 AM</option>
+                <option value="12:00pm">12:00 PM</option>
+                <option value="2:30pm">2:30 PM</option>
+                <option value="5:00pm">5:00 PM</option>
+            </select>
+        </div>
+        <button class="btn-book" onclick="showBill()">Reserve Parking</button>
+    </div>
+</body>
+</html>
